@@ -1,0 +1,109 @@
+@font-face {
+    font-family: pro;
+    src: url(Assests/BasisGrotesqueArabicPro-Light.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 85%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 3vw 5vw;
+}
+
+.left {
+    height: 100%;
+    width: 45%;
+    background-color: rgb(0, 0, 0);
+    /* background-image: url(https://i.pinimg.com/736x/44/dd/ad/44ddadcceebfe889c3fedae5ea1e6629.jpg); */
+background-size: contain;
+background-repeat: no-repeat;
+background-position: top;
+}
+
+.right {
+    height: 100%;
+    width: 55%;
+    padding: 0 3vw;
+    /* background-color: crimson; */
+}
+
+.right>h3 {
+    font-size: 30px;
+}
+
+.all-songs {
+    height: 85%;
+    /* background-color: red; */
+    margin-top: 10px;
+}
+
+.songs-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid gray;
+    padding: 12px 11px;
+}
+.songs-card:hover{
+    background-color: rgba(31, 31, 31, 0.781);
+}
+.songs-card .part1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    pointer-events: none;
+}
+.songs-card img {
+    height: 65px;
+    width: 55px
+}
+.songs-card .part1 h2 {
+    font-family: pro;
+    font-size: 17px;
+    font-weight: 600;
+}
+.songs-card .part2 h6{
+    font-size: 13px;
+}
+.songs-card:nth-last-child(1){
+    border-bottom: 1px solid gray;
+}
+
+.player{
+    height: 15%;
+    width: 100%;
+    background: rgb(37, 37, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.player h4{
+background-color: rgba(17, 17, 17, 0.877);
+padding: 10px;
+border-radius: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.player h4 i{
+font-size: 23px;
+}
+.player h4:active{
+    scale: 0.95;
+}
